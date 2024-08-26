@@ -30,10 +30,12 @@ class MotorCycle implements Bike {
 class Bicycle implements Bike {
 
     public void turnOnEngine() {
-      throw new AssertionError( detailMessage: "there is no engine");
+      throw new AssertionError( detailMessage: "there is no engine");   // if we replace bike object with Bicyle object this line will break the functionality as Bicyle has no engine.
     }
 
     public void accelerate() {
       //do something
     }
 }
+
+So, replacing parent Bike with its Subclass Bicycle will break the code, this should not take place.
