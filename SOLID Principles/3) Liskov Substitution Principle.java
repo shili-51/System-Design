@@ -161,4 +161,21 @@ public class Main {
     }
 
 }
+
+
+
+This code wont work - 
+public class Main {
+    public static void main(String args[]){
+          List<Vehicle> vehicleList = new ArrayList<>();
+          vehicleList.add(new MotorCycle());
+          vehicleList.add(new Car());
+          vehicleList.add(new Bicycle());
+
+          for(Vehicle vehicle : vehicleList){
+              System.out.println(vehicle.hasEngine().toString());  // vehicle is not aware of has Engine Method
+          }
+    }
+
+}
   
