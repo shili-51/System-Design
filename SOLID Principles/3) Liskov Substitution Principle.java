@@ -173,7 +173,23 @@ public class Main {
           vehicleList.add(new Bicycle());
 
           for(Vehicle vehicle : vehicleList){
-              System.out.println(vehicle.hasEngine().toString());  // vehicle is not aware of has Engine Method
+              System.out.println(vehicle.hasEngine().toString());  // vehicle is not aware of has Engine Method // compile time error
+          }
+    }
+
+}
+
+
+
+public class Main {
+    public static void main(String args[]){
+          List<EngineVehicle> vehicleList = new ArrayList<>();
+          vehicleList.add(new MotorCycle());
+          vehicleList.add(new Car());
+          vehicleList.add(new Bicycle()); // it will throw compile time error as bicycle is not aware about Engine Vehicle
+
+          for(Vehicle vehicle : vehicleList){
+              System.out.println(vehicle.hasEngine());  // vehicle is not aware of has Engine Method // compile time error
           }
     }
 
