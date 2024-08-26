@@ -156,7 +156,7 @@ public class Main {
           vehicleList.add(new Bicycle());
 
           for(Vehicle vehicle : vehicleList){
-              System.out.println(vehicle.hasEngine().toString()); 
+              System.out.println(vehicle.getNumberOfWheels().toString());  // method of vehicle class is called and it will not break for any bike, motorbike, or bicycle
           }
     }
 
