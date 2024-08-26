@@ -1,4 +1,4 @@
-SOLID - 
+SOLID Principles - 
 1) Single Responsibility
 2) Open/ Closed Principle
 3) Liskov Substituiton Principle
